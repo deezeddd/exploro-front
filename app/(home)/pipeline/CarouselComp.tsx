@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/carousel"
 import { PiFinnTheHuman } from "react-icons/pi"
 
-export function CarouselSize() {
+export function CarouselComp() {
     return (
         <Carousel
             opts={{

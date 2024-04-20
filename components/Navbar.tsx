@@ -42,7 +42,7 @@ export default function Navbar() {
                                 Pipeline
                             </li>
                         </Link>
-                        <Link href={'/'}>
+                        <Link href={'/studies'}>
                             <li className='ml-6 uppercase hover:bg-slate-200 p-2 rounded-md text-sm'>
                                 Studies
                             </li>
@@ -52,7 +52,7 @@ export default function Navbar() {
                                 Schedule
                             </li>
                         </Link>
-                        <Link href={'/'}>
+                        <Link href={'/participants'}>
                             <li className='ml-6 uppercase hover:bg-slate-200 p-2 rounded-md text-sm'>
                                 Participants
                             </li>
@@ -134,7 +134,7 @@ export default function Navbar() {
                                     Pipeline
                                 </li>
                             </Link>
-                            <Link href={'/'}>
+                            <Link href={'/studies'}>
                                 <li onClick={() => setMenuOpen(false)} className='py-4 hover:text-slate-500 hover:border-b-2  cursor-pointer'>
                                     Studies
                                 </li>
@@ -144,7 +144,7 @@ export default function Navbar() {
                                     Schedule
                                 </li>
                             </Link>
-                            <Link href={'/'}>
+                            <Link href={'/participants'}>
                                 <li onClick={() => setMenuOpen(false)} className='py-4 hover:text-slate-500 hover:border-b-2  cursor-pointer'>
                                     Participants
                                 </li>
