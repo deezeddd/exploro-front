@@ -63,7 +63,6 @@ export default function Studies() {
                             <div className=' pr-3 mt-1 text-xl'>
                                 <button>...</button>
                             </div>
-
                         </div>
                         <div className=' border-t-2 pt-2 '>
                             <div className='flex justify-between align-baseline' >

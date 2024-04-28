@@ -36,8 +36,7 @@ export function CarouselComp() {
                                         <div className="ml-3">
                                             <p className="font-bold">Elise Beverley</p>
                                             <p className=" text-sm text-gray-400">Eligible</p>
-                                            <span className="text-xs p-1 rounded-lg bg-gray-200 text-gray-400">Examining the effective...</span>
-
+                                            <p className="text-xs p-1 rounded-lg bg-gray-200 text-gray-400 truncate w-[12%] ">Examining the effective Lorem ipsum dolor sit amet consectetur adipisicing elit. Enimlorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas rem deleniti dignissimos accusamus nemo! Laborum voluptate</p>
                                         </div>
                                     </div>
                                     <div className=" flex m-2 p-3 bg-white shadow-sm shadow-slate-600 rounded-md">
@@ -48,8 +47,7 @@ export function CarouselComp() {
                                         <div className="ml-3">
                                             <p className="font-bold">Elise Beverley</p>
                                             <p className=" text-sm text-gray-400">Eligible</p>
-                                            <span className="text-xs p-1 rounded-lg bg-gray-200 text-gray-400">Examining the effective...</span>
-
+                                            <p className="text-xs p-1 rounded-lg bg-gray-200 text-gray-400 truncate w-[12%] ">Examining the effective Lorem ipsum dolor sit amet consectetur adipisicing elit. Enimlorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis quas rem deleniti dignissimos accusamus nemo! Laborum voluptate</p>
                                         </div>
                                     </div>
                                     

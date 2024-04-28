@@ -33,7 +33,7 @@ export default function Navbar() {
                 <Link href={"/"}>
                     <div className='pl-2'>
                         {/* <MdOutlineTravelExplore size={30} color='#ADD8E6' /> */}
-                        <img src='ExploroTrans.png' height="40" width="40"></img>
+                        <img src='../ExploroTrans.png' height="40" width="40"></img>
                     </div>
                 </Link>
                 <div className='hidden lg:flex'>
