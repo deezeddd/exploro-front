@@ -32,7 +32,8 @@ export default function Navbar() {
             <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
                 <Link href={"/"}>
                     <div className='pl-2'>
-                        <MdOutlineTravelExplore size={30} color='#ADD8E6' />
+                        {/* <MdOutlineTravelExplore size={30} color='#ADD8E6' /> */}
+                        <img src='ExploroTrans.png' height="40" width="40"></img>
                     </div>
                 </Link>
                 <div className='hidden lg:flex'>
@@ -62,7 +63,7 @@ export default function Navbar() {
                                 Dashboard
                             </li>
                         </Link>
-                        <Link href={'/'}>
+                        {/* <Link href={'/'}>
                             <li className='ml-6 uppercase hover:bg-slate-200 p-2 rounded-md text-sm'>
                                 Messages
                             </li>
@@ -76,7 +77,7 @@ export default function Navbar() {
                             <li className='ml-6 uppercase hover:bg-slate-200 p-2 rounded-md text-sm'>
                                 Multi-step Form
                             </li>
-                        </Link>
+                        </Link> */}
                     </ul>
                 </div>
 
@@ -154,7 +155,7 @@ export default function Navbar() {
                                     Dashboard
                                 </li>
                             </Link>
-                            <Link href={'/'}>
+                            {/* <Link href={'/'}>
                                 <li onClick={() => setMenuOpen(false)} className='py-4 hover:text-slate-500 hover:border-b-2  cursor-pointer'>
                                     Message
                                 </li>
@@ -168,7 +169,7 @@ export default function Navbar() {
                                 <li onClick={() => setMenuOpen(false)} className='py-4 hover:text-slate-500 hover:border-b-2  cursor-pointer'>
                                     Multi-step Form
                                 </li>
-                            </Link>
+                            </Link> */}
                         </ul>
                         <ul className=' absolute bottom-0 right-[10%] sm:right-[15%] md:right-[30%]  p-5 flex-col'>
                             <div className='flex items-center mb-4'>
