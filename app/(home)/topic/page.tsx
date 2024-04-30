@@ -38,7 +38,7 @@ export default function Name() {
                         </div>
                     </div>
                 </div>
-                <div className='p-24'>
+                <div className='p-24'> 
                     <CarouselComp />
                 </div>
             </div>
