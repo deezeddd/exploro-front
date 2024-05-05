@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import { PiFinnTheHuman } from 'react-icons/pi'
+import { Filter } from '../pipeline/Filter'
+import { ParticipantSheet } from '@/components/Sheet/ParticipantSheet'
 
 export default function Participants() {
     return (
@@ -10,11 +12,8 @@ export default function Participants() {
                     <h1 className=' text-3xl font-bold'>Participants</h1>
                     <div >
                         <input name="search" type='text' placeholder="🔍  Search" className=' p-3 m-2 bg-gray-200 rounded-lg w-[40%] h-10' />
-                        <select disabled className='btn w-28 h-9 bg-gray-200 p-2 rounded-md text-gray-500 border-r-4'>
-                            <option defaultChecked> Filter By </option>
-                            <option value="YO"> YO</option>
-                        </select>
-                        <Button className='m-2'>+ Add Participant</Button>
+                        <Filter/>
+                        <ParticipantSheet/>
                     </div>
                 </div>
                 <div className=' w-screen mt-4'>

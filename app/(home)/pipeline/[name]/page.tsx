@@ -1,6 +1,9 @@
 import React from 'react'
 import BreadcrumbComp from './BreadCrumbComp'
 import { Button } from '@/components/ui/button'
+import { Popover, PopoverTrigger, PopoverContent } from '@/components/ui/popover'
+import { Filter } from '../Filter'
+import { EventSheet } from '@/components/Sheet/EventSheet'
 
 export default function Name() {
     return (
@@ -22,8 +25,24 @@ export default function Name() {
                         <div className='flex mt-5'>
                             <div>
                                 <Button className='bg-sky-800'>☎️ Call </Button>
-                                <Button className='mr-2 ml-2 bg-slate-200 text-black hover:text-white' >✉️ Email </Button>
-                                <Button className='bg-slate-200 text-black hover:text-white'>... </Button>
+                                <Button className='mr-2 ml-2 bg-slate-200 border border-slate-300 text-black hover:text-white' >✉️ Email </Button>
+                                {/* <Button className='bg-slate-200 text-black hover:text-white'>...</Button> */}
+                                <div className=' inline-block'>
+                                    <Popover >
+                                        <PopoverTrigger asChild>
+                                            <Button variant="outline">...</Button>
+                                        </PopoverTrigger>
+                                        <PopoverContent className="w-36 p-0 mr-20">
+                                            <div className=''>
+                                                < h1 className='text-sm pl-2 pt-3 pb-2 hover:bg-slate-100 hover:cursor-pointer'>GO</h1>
+                                                < h1 className='text-sm pl-2 pt-3 pb-2 hover:bg-slate-100 hover:cursor-pointer'>Edit Candidate</h1>
+                                                < h1 className='text-sm pl-2 pt-3 pb-2 hover:bg-slate-100 hover:cursor-pointer'>GO</h1>
+
+                                            </div>
+                                        </PopoverContent>
+                                </Popover>
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -46,9 +65,9 @@ export default function Name() {
                         <div className='grid grid-flow-col grid-cols-2 gap-5 p-5 border-2 border-slate-200 rounded-md '>
                             <div>
                                 <h1 className=' text-2xl font-bold mb-3'>Applied For:</h1>
-                                <div className='text-sm flex justify-between align-baseline bg-gray-100 p-2 rounded-lg' >
-                                    <div>
-                                        <h2 className=' pb-1 font-bold text-cyan-700'>Lorem ipsum dolor sit, amet consectetur</h2>
+                                <div className='text-sm flex justify-between align-baseline bg-gray-100 p-2 rounded-lg hover:cursor-pointer hover:bg-gray-200' >
+                                    <div >
+                                        <h2 className=' pb-1 font-bold text-cyan-700 uppercase'> longitudinal Studies</h2>
                                         <h2 className='pb-1 font-bold'>Examining the Effectiveness Of Vision Tranining</h2>
                                         <p className='text-neutral-500 w-[90%] max-h-xs'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae cumque </p>
                                     </div>
@@ -60,7 +79,7 @@ export default function Name() {
                             <div>
                                 <div>
                                     <h2 className='font-bold mb-3 text-sky-800  '>Signed Consent Form</h2>
-                                    <button type="button" className='bg-slate-200 rounded-lg pl-2 pr-2 p-1 font-bold text-xs text-sky-800 '>↗ View Form</button>
+                                    <button type="button" className='bg-slate-200 rounded-lg pl-2 pr-2 p-1 font-bold text-xs text-sky-800 hover:bg-slate-300 '>↗ View Form</button>
                                 </div>
                                 <div className='mt-4 '>
                                     <h1 className='font-bold'>Notes</h1>
@@ -75,7 +94,7 @@ export default function Name() {
                         <div className='p-5 border-2 border-slate-200 rounded-md '>
                             <div className='flex justify-between'>
                                 <h1 className='text-2xl font-bold'>Upcoming Meetings</h1>
-                                <Button>+ New Event</Button>
+                                <EventSheet/>
                             </div>
                             <div>
                                 <div className='flex justify-between mt-6'>
@@ -84,7 +103,7 @@ export default function Name() {
                                     </div>
                                     <div>
                                         {/* TODO select options dropdown */}
-                                        <Button className='ml-2'>Month</Button> 
+                                        <Button className='ml-2'>Month</Button>
                                         <Button className='ml-2'>Today</Button>
                                         <Button className='ml-2'>{'<'}</Button>
                                         <Button className='ml-2'>{'>'}</Button>
@@ -92,7 +111,7 @@ export default function Name() {
                                 </div>
                                 <div className='mt-4'>
                                     <h1>Notes</h1>
-                                    <div className=' bg-gray-100 rounded-lg '>
+                                    <div className=' bg-gray-100 rounded-lg p-3 '>
                                         <h1>adsasdasd</h1>
                                         <h1>Lorem ipsum dolor sit amet.</h1>
                                         <h1>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab?</h1>
