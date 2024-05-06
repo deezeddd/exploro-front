@@ -22,8 +22,10 @@ export function ParticipantSheet() {
     return (
         <>
             <Sheet>
-                <SheetTrigger>
-                    <Button className='m-2'>+ New Participant</Button>
+                <SheetTrigger className='m-2 bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50'>
+                       <h1 className='p-2'>
+                         + New Participant
+                        </h1> 
                 </SheetTrigger>
                 <SheetContent className=' p-0 rounded-lg'  >
                     <SheetHeader  >
@@ -75,7 +77,7 @@ export function ParticipantSheet() {
                                     <div className='mb-4' >
                                         <h1 className='font-bold mb-2 '>Applied For</h1>
                                         <div className=' bg-gray-100 rounded-lg p-4 min-h-10 '>
-                                            <Filter/>   
+                                            <Filter />   
                                             {/* TODO => Filter */}
                                         </div>
                                     </div>

@@ -17,10 +17,11 @@ import { PiFinnTheHuman } from 'react-icons/pi'
 export function EventSheet() {
     return (
         <>
-       
             <Sheet>
-                <SheetTrigger>
-                    <Button className='m-2'>+ New Event</Button>
+            <SheetTrigger className='m-2 bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50'>
+                       <h1 className='p-2'>
+                         + New Event
+                        </h1> 
                 </SheetTrigger>
                 <SheetContent className='p-0 rounded-lg'  >
                     <SheetHeader  >
