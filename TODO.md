@@ -8,7 +8,7 @@
     [] Create Forms 
     [] Login/Signup
     [] Create SVGs of Images 
-    [] Schedule Page
+    [] Schedule Page/ Calendar - Fullcalendar.js https://www.youtube.com/watch?v=VrC5XhjW6W0
     [] Buttons and Hover
 
 ## Phase-2 (Backend)
