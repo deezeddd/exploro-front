@@ -140,7 +140,7 @@ export default function Navbar() {
                                     Studies
                                 </li>
                             </Link>
-                            <Link href={'/'}>
+                            <Link href={'/schedule'}>
                                 <li onClick={() => setMenuOpen(false)} className='py-4 hover:text-slate-500 hover:border-b-2  cursor-pointer'>
                                     Schedule
                                 </li>
@@ -150,7 +150,7 @@ export default function Navbar() {
                                     Participants
                                 </li>
                             </Link>
-                            <Link href={'/'}>
+                            <Link href={'/dashboard'}>
                                 <li onClick={() => setMenuOpen(false)} className='py-4 hover:text-slate-500 hover:border-b-2  cursor-pointer'>
                                     Dashboard
                                 </li>

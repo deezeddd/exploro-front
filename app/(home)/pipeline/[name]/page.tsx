@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button'
 import { Popover, PopoverTrigger, PopoverContent } from '@/components/ui/popover'
 import { Filter } from '../Filter'
 import { EventSheet } from '@/components/Sheet/EventSheet'
+import Calendar from '@/components/Calendar'
 
 export default function Name() {
     return (
@@ -98,19 +99,20 @@ export default function Name() {
                             </div>
                             <div>
                                 <div className='flex justify-between mt-6'>
-                                    <div>
+                                    {/* <div>
                                         <h1 className=' font-bold'>April 2024</h1>
-                                    </div>
-                                    <div>
-                                        {/* TODO select options dropdown */}
+                                    </div> */}
+                                    {/* <div>
                                         <Button className='ml-2'>Month</Button>
                                         <Button className='ml-2'>Today</Button>
                                         <Button className='ml-2'>{'<'}</Button>
                                         <Button className='ml-2'>{'>'}</Button>
-                                    </div>
+                                    </div> */}
                                 </div>
-                                <div className='mt-4'>
-                                    <h1>Notes</h1>
+                                        {/* TODO select options dropdown */}
+                                        <Calendar/>
+                                <div className='mt-6'>
+                                    <h1 className='font-bold text-2xl mb-3'>Notes</h1>
                                     <div className=' bg-gray-100 rounded-lg p-3 '>
                                         <h1>adsasdasd</h1>
                                         <h1>Lorem ipsum dolor sit amet.</h1>

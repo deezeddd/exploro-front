@@ -8,12 +8,21 @@ import timeGridPlugin from '@fullcalendar/timegrid'
 
 export default function Calendar() {
     return (
-        <FullCalendar
+        <FullCalendar 
+            height={700}
             plugins={[dayGridPlugin,
                 interactionPlugin,
                 timeGridPlugin]}
             initialView="dayGridMonth"
-            // events=[{}]
+            events={{}}
+            nowIndicator ={true}
+            editable ={true}
+            droppable ={true}
+            selectable ={true}
+            selectMirror ={true}
+            // dateClick={{}}
+            // drop={}
+            // eventClick={}
         />
 
     )
