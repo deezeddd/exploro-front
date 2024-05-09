@@ -48,7 +48,7 @@ export default function Navbar() {
                                 Studies
                             </li>
                         </Link>
-                        <Link href={'/'}>
+                        <Link href={'/schedule'}>
                             <li className='ml-6 uppercase hover:bg-slate-200 p-2 rounded-md text-sm'>
                                 Schedule
                             </li>
@@ -58,7 +58,7 @@ export default function Navbar() {
                                 Participants
                             </li>
                         </Link>
-                        <Link href={'/'}>
+                        <Link href={'/dashboard'}>
                             <li className='ml-6 uppercase hover:bg-slate-200 p-2 rounded-md text-sm'>
                                 Dashboard
                             </li>
