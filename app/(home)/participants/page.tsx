@@ -32,7 +32,7 @@ export default function Participants() {
                                         <tbody className="divide-y divide-gray-200">
                                             <tr>
 
-                                                <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 flex"> <PiFinnTheHuman size={30} className='mr-3' />  John Brown</td>
+                                                <td className="px-6 py-4 whitespace-nowrap font-medium text-gray-800 flex"> <PiFinnTheHuman size={30} className='mr-3' />  John Brown</td>
                                                 <td className=" px-6 py-4 text-sm text-gray-800 truncate max-w-xs">
                                                     Lorem ipsum dolor sit amet  fdfkafaflnaljfnanfdnafnfdsaj nafdn fn akjn kjanfjk gnjkfn jsfdngjg jkds ngkjsdng
                                                 </td>                                                   
@@ -41,7 +41,7 @@ export default function Participants() {
                                             </tr>
 
                                             <tr>
-                                                <td className="px-6 py-4 whitespace-nowrap font-bold font-medium text-black flex "> <PiFinnTheHuman size={30} className='mr-3' /> Green SquarePants  </td>
+                                                <td className="px-6 py-4 whitespace-nowrap  font-medium text-black flex "> <PiFinnTheHuman size={30} className='mr-3' /> Green SquarePants  </td>
                                                 <td className=" px-6 py-4 text-sm text-gray-800 truncate max-w-xs">
                                                     Lorem ipsum dolor sit amet  fdfkafaflnaljfnanfdnafnfdsaj nafdn fn akjn kjanfjk gnjkfn jsfdngjg jkds ngkjsdng
                                                 </td>                                                

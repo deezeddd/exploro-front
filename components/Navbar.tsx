@@ -4,13 +4,11 @@ import React from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { PiFinnTheHuman } from "react-icons/pi";
 import { CiSettings, CiLogout } from "react-icons/ci";
-import { MdOutlineTravelExplore } from "react-icons/md";
-
-
 
 import { useState } from 'react'
 
 export default function Navbar() {
+
 
     // TODO -> ADD Pages link in both, add image of the Person logged in + also add signout profile options on click
     const [menuOpen, setMenuOpen] = useState(false);
@@ -32,7 +30,6 @@ export default function Navbar() {
             <div className='flex justify-between items-center h-full w-full px-4 2xl:px-16'>
                 <Link href={"/"}>
                     <div className='pl-2'>
-                        {/* <MdOutlineTravelExplore size={30} color='#ADD8E6' /> */}
                         <img src='../ExploroTrans.png' height="40" width="40"></img>
                     </div>
                 </Link>
@@ -59,7 +56,7 @@ export default function Navbar() {
                             </li>
                         </Link>
                         <Link href={'/dashboard'}>
-                            <li className='ml-6 uppercase hover:bg-slate-200 p-2 rounded-md text-sm'>
+                            <li className=' ml-6 uppercase hover:bg-slate-200 p-2 rounded-md text-sm'>
                                 Dashboard
                             </li>
                         </Link>

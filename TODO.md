@@ -2,14 +2,15 @@
 
 ## Phase-1 
 
-    [] Dashboard - Priority 
+    [X] Dashboard - Priority 
     [] Home Page
     [X] 2 Sidebar on Button () -> Create a common component
     [] Create Forms 
     [] Login/Signup
     [] Create SVGs of Images 
-    [] Schedule Page/ Calendar - Fullcalendar.js https://www.youtube.com/watch?v=VrC5XhjW6W0
-    [] Buttons and Hover
+    [X] Schedule Page/ Calendar - Fullcalendar.js https://www.youtube.com/watch?v=VrC5XhjW6W0
+        [] Full Fledged Calendar to add Details too
+    [X] Buttons and Hover
 
 ## Phase-2 (Backend)
 
