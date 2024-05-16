@@ -12,7 +12,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from '@/components/ui/sheet'
-import { DatePickerDemo } from '../Datepicker'
+import { DatePicker } from '../Datepicker'
 import { PiFinnTheHuman } from 'react-icons/pi'
 import { Filter } from '@/app/(home)/pipeline/Filter'
 

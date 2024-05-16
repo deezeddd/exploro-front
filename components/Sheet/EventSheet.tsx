@@ -9,7 +9,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from '@/components/ui/sheet'
-import { DatePickerDemo } from '../Datepicker'
+import { DatePicker } from '../Datepicker'
 import { PiFinnTheHuman } from 'react-icons/pi'
 
 
@@ -41,11 +41,11 @@ export function EventSheet() {
                                 </div>
                                 <div className='mb-8'>
                                     <h1 className='font-bold'>Start*</h1>
-                                    <DatePickerDemo />
+                                    <DatePicker />
                                 </div>
                                 <div className='mb-8 '>
                                     <h1 className='font-bold'>End*</h1>
-                                    <DatePickerDemo />
+                                    <DatePicker />
                                 </div>
                                 <div >
                                     <h1 className='font-bold'>Notes</h1>
