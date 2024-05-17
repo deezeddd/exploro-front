@@ -1,16 +1,26 @@
 'use client'
 import Link from 'next/link';
 import { Form } from '@/app/(signup-in)/register/register-form';
-import { redirect } from 'next/navigation';
 import { SubmitButton } from '@/app/(signup-in)/submit-button';
 
 
-export default function Login() {
-  async function register(formData: FormData) {
-    // 'use server';
-    let email = formData.get('email') as string;
-    let name = formData.get('name') as string;
+export default function Register() {
+  async function register(formData: FormData) {   //FormData is empty interface
 
+    let email = formData.get('email') as string;
+
+    let name = formData.get('name') as string;
+    let password = formData.get('password') as string;
+
+    console.log("Name ", name)
+    console.log("Email ",email)
+    console.log("Password ",password)
+  }
+  async function guess(formData: FormData) {   //FormData is empty interface
+
+    let email = formData.get('email') as string;
+
+    let name = formData.get('name') as string;
     let password = formData.get('password') as string;
 
     console.log("Name ", name)
