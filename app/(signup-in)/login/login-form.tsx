@@ -1,7 +1,4 @@
-export function Form({
-    action,
-    children,
-  }: {
+export function Form({action,children}: {
     action: any;
     children: React.ReactNode;
   }) {

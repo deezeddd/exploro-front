@@ -10,7 +10,8 @@ export default async function Login() {
     
     let email = formData.get('email') as string;
     let password = formData.get('password') as string;
-    console.warn(password);
+    console.log(email,password);
+
   }
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-gray-50">
@@ -25,8 +26,8 @@ export default async function Login() {
           <SubmitButton>Sign in</SubmitButton>
           <p className="text-center text-sm text-gray-600">
             {"Don't have an account? "}
-            <Link href="/register" className="font-semibold text-gray-800">
-              Sign up
+            <Link href="/register" className="font-semibold text-gray-800 hover:border-b-2 hover:border-blue-300 hover:text-blue-400">
+              Sign Up
             </Link>
             {' for free.'}
           </p>

@@ -1,3 +1,4 @@
+'use client'
 import Link from 'next/link';
 import { Form } from '@/app/(signup-in)/register/register-form';
 import { redirect } from 'next/navigation';
@@ -6,9 +7,15 @@ import { SubmitButton } from '@/app/(signup-in)/submit-button';
 
 export default function Login() {
   async function register(formData: FormData) {
-    'use server';
+    // 'use server';
     let email = formData.get('email') as string;
+    let name = formData.get('name') as string;
+
     let password = formData.get('password') as string;
+
+    console.log("Name ", name)
+    console.log("Email ",email)
+    console.log("Password ",password)
   }
 
   return (
@@ -24,8 +31,8 @@ export default function Login() {
           <SubmitButton>Sign Up</SubmitButton>
           <p className="text-center text-sm text-gray-600">
             {'Already have an account? '}
-            <Link href="/login" className="font-semibold text-gray-800">
-              Sign in
+            <Link href="/login" className="font-semibold text-gray-800 hover:border-b-2 hover:border-blue-300 hover:text-blue-400">
+              Sign In
             </Link>
             {' instead.'}
           </p>
