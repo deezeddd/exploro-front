@@ -116,11 +116,12 @@ export default function Navbar() {
                 </div>
 
                 <div className={menuOpen
-                    ? 'fixed right-0 top-0 sm:w-[35%] w-[55%]  lg:hidden bg-slate-100 h-screen p-10 ease-in duration-500'
-                    : 'fixed right-[-100%] top-0 sm:w-[35%] w-[55%] h-screen  p-10 ease-in duration-500'}>
+                    // ? 'fixed right-0 top-0 sm:w-[35%] w-[55%] lg:hidden bg-slate-100 h-screen p-10 ease-in duration-500 ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2  disabled:opacity-100'
+                    ? ' w-[55%] lg:hidden bg-slate-100 h-screen m-2 bg-primary text-primary-foreground hover:bg-primary/90 inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50'
+                    : 'fixed right-[-100%]  top-0 sm:w-[35%] w-[55%] h-screen  p-10 ease-in duration-500'}>
 
                     <div className='flex w-full items-center justify-end'>
-                        <div onClick={handleNav} className='absolute  top-8 right-6 cursor-pointer'>
+                        <div onClick={handleNav} className='absolute top-8 right-6 cursor-pointer'>
                             <AiOutlineClose className='hover:bg-slate-300 p-1 rounded-md' size={30} />
                         </div>
                     </div>
@@ -183,7 +184,7 @@ export default function Navbar() {
                                     </div>
                                 </li>
                             </Link>
-                            <Link href={'/dashboard'}>
+                            <Link href={'/login'}>
                                 <li onClick={() => setProfileOpen(false)} className='hover:text-red-500 mb-2 cursor-pointer text-base '>
                                     <div className='flex items-center'>
                                         <CiLogout size={25} />

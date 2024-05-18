@@ -16,17 +16,7 @@ export default function Register() {
     console.log("Email ",email)
     console.log("Password ",password)
   }
-  async function guess(formData: FormData) {   //FormData is empty interface
 
-    let email = formData.get('email') as string;
-
-    let name = formData.get('name') as string;
-    let password = formData.get('password') as string;
-
-    console.log("Name ", name)
-    console.log("Email ",email)
-    console.log("Password ",password)
-  }
 
   return (
     <div className="flex h-screen w-screen items-center justify-center bg-gray-50">
