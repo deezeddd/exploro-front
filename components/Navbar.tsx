@@ -4,11 +4,14 @@ import React from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { PiFinnTheHuman } from "react-icons/pi";
 import { CiSettings, CiLogout } from "react-icons/ci";
+import { useSession } from "next-auth/react";
+
 
 import { useState } from 'react'
 
 export default function Navbar() {
 
+    const { data: session } = useSession();
 
     // TODO -> ADD Pages link in both, add image of the Person logged in + also add signout profile options on click
     const [menuOpen, setMenuOpen] = useState(false);
@@ -87,7 +90,7 @@ export default function Navbar() {
                     : 'hidden'}>
                     <ul className='p-5 '>
                         <li className='hover:text-green-500 mb-4 pl-1 cursor-pointer text-base whitespace-nowrap text-ellipsis overflow-hidden ' >
-                            Vedant Maurya
+                        {session?.user?.name}
                         </li>
                         <Link href={'/dashboard'} >
                             <li onClick={() => setProfileOpen(false)} className='hover:text-blue-500 mb-4 cursor-pointer text-sm'>
@@ -173,7 +176,7 @@ export default function Navbar() {
                             <div className='flex items-center mb-4'>
                                 <PiFinnTheHuman size={30} />
                                 <li className='hover:text-green-500 pl-2 cursor-pointer text-base whitespace-nowrap text-ellipsis overflow-hidden ' >
-                                    Vedant Maurya
+                                {session?.user?.name}
                                 </li>
                             </div>
                             <Link href={'/dashboard'} >

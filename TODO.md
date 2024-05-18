@@ -1,16 +1,20 @@
 ### ToDo
 
 ## Phase-1 
-    [] Create Forms 
-    [X] Dashboard - Priority 
+    [X] Create Forms
+    [X] Auth with github
+        -[] Modifications in that
+        -[] Simple login signup with Auth.js
+
+    [] Dashboard - Priority 
     [] Home Page
     [X] 2 Sidebar on Button () -> Create a common component
-    [] Login/Signup
     [] Create SVGs of Images 
     [X] Schedule Page/ Calendar - Fullcalendar.js https://www.youtube.com/watch?v=VrC5XhjW6W0
         [] Full Fledged Calendar to add Details too
+
     [X] Buttons and Hover
-    [] Remove Demo From Components
+    [X] Remove Demo From Components
 
 ## Phase-2 (Backend)
 
