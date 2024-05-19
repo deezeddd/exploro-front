@@ -17,10 +17,15 @@
     [X] Remove Demo From Components
 
 ## Phase-2 (Backend)
-
+1st Step=>
     [] Authentication
-    [] Authorization
+    [] Authorization -Nextjs 
+    
+2nd Step=>
     [] Database Connections
+3rd Step=>
     [] APIs
     [] Any Service?
+4th Step=>
+    [] Find Shortcuts/packages to easier tasks
     
