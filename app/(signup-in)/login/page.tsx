@@ -41,6 +41,8 @@ export default function Login() {
           </Form>
 
           <Button onClick={() => signIn("github")}>Sign in With Github</Button>
+          <Button onClick={() => signIn("google")}>Sign in With Google</Button>
+
         </div>
       </div>
     )

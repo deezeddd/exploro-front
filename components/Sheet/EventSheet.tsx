@@ -11,6 +11,7 @@ import {
 } from '@/components/ui/sheet'
 import { DatePicker } from '../Datepicker'
 import { PiFinnTheHuman } from 'react-icons/pi'
+import { Filter } from '../Filter'
 
 
 
@@ -37,20 +38,21 @@ export function EventSheet() {
                             </div>
                             <div className="p-3">
                                 <div className=' mb-8'>
-                                    <h1 className='font-bold'>Type Of Event*</h1>
+                                    <h1 className='font-bold mb-2'>Type Of Event<small className='text-red-500'>*</small></h1>
+                                    <Filter  className="  rounded-lg p-4 min-h-11" />
                                 </div>
                                 <div className='mb-8'>
-                                    <h1 className='font-bold'>Start*</h1>
+                                    <h1 className='font-bold mb-2'>Start<small className='text-red-500'>*</small></h1>
                                     <DatePicker />
                                 </div>
                                 <div className='mb-8 '>
-                                    <h1 className='font-bold'>End*</h1>
+                                    <h1 className='font-bold mb-2'>End<small className='text-red-500'>*</small></h1>
                                     <DatePicker />
                                 </div>
                                 <div >
-                                    <h1 className='font-bold'>Notes</h1>
-                                    <div className=' bg-gray-100 rounded-lg p-4 min-h-48'>
-                                        <h1>Lorem ipsum dolor sit amet.</h1>
+                                    <h1 className='font-bold mb-2'>Notes</h1>
+                                    <div className=' '>
+                                    <textarea className='bg-gray-100 rounded-lg min-h-48 w-full p-4 '  />
                                     </div>
                                 </div>
                             </div>

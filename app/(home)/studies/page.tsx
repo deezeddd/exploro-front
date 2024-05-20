@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button'
 import React from 'react'
 import Trials from './[trials]/page'
-import { Filter } from '../pipeline/Filter'
+import { Filter } from '../../../components/Filter'
 import Link from 'next/link'
 
 export default function Studies() {
@@ -38,7 +38,7 @@ export default function Studies() {
                     </div>
                     <div className='text-end'>
                         <input name="search" type='text' placeholder="🔍  Search" className=' p-3 m-2 bg-gray-200 rounded-lg w-[40%] h-10' />
-                        <Filter/>
+                        <Filter divClassName="inline-block" className=" bg-gray-100 rounded-lg p-4 min-h-10" />
                         <Button className='m-2 p-3'>+ NEW</Button>
                     </div>
                 </div>

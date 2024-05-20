@@ -2,7 +2,7 @@ import React from 'react'
 import BreadcrumbComp from './BreadCrumbComp'
 import { Button } from '@/components/ui/button'
 import { Popover, PopoverTrigger, PopoverContent } from '@/components/ui/popover'
-import { Filter } from '../Filter'
+import { Filter } from '../../../../components/Filter'
 import { EventSheet } from '@/components/Sheet/EventSheet'
 import Calendar from '@/components/Calendar'
 

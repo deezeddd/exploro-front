@@ -4,7 +4,7 @@ import React from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'
 import { PiFinnTheHuman } from "react-icons/pi";
 import { CiSettings, CiLogout } from "react-icons/ci";
-import { useSession } from "next-auth/react";
+import { signOut, useSession } from "next-auth/react";
 
 
 import { useState } from 'react'
@@ -85,12 +85,12 @@ export default function Navbar() {
                 <div onClick={handleProfile} className='hidden lg:flex cursor-pointer pr-5'>
                     <PiFinnTheHuman size={30} />
                 </div>
-                <div className={profileOpen
+                <div className={profileOpen && session
                     ? ' fixed top-8 right-6 mt-10 h-min w-44 bg-slate-100 rounded-md hover:h-max ease-in-out duration-700'
                     : 'hidden'}>
                     <ul className='p-5 '>
                         <li className='hover:text-green-500 mb-4 pl-1 cursor-pointer text-base whitespace-nowrap text-ellipsis overflow-hidden ' >
-                        {session?.user?.name}
+                            {session?.user?.name}
                         </li>
                         <Link href={'/dashboard'} >
                             <li onClick={() => setProfileOpen(false)} className='hover:text-blue-500 mb-4 cursor-pointer text-sm'>
@@ -102,13 +102,12 @@ export default function Navbar() {
                         </Link>
                         <Link href={'/dashboard'}>
                             <li onClick={() => setProfileOpen(false)} className='hover:text-red-500 mb-2 cursor-pointer text-sm '>
-                                <div className='flex items-center'>
+                                <div className='flex items-center' onClick={() => signOut()}>
                                     <CiLogout size={25} />
                                     LogOut
                                 </div>
                             </li>
                         </Link>
-
                     </ul>
                 </div>
 
@@ -156,7 +155,8 @@ export default function Navbar() {
                                     Dashboard
                                 </li>
                             </Link>
-                            {/* <Link href={'/'}>
+                            {
+                            /* <Link href={'/'}>
                                 <li onClick={() => setMenuOpen(false)} className='py-4 hover:text-slate-500 hover:border-b-2  cursor-pointer'>
                                     Message
                                 </li>
@@ -170,37 +170,47 @@ export default function Navbar() {
                                 <li onClick={() => setMenuOpen(false)} className='py-4 hover:text-slate-500 hover:border-b-2  cursor-pointer'>
                                     Multi-step Form
                                 </li>
-                            </Link> */}
+                            </Link> */
+                            }
                         </ul>
                         <ul className=' absolute bottom-0 right-[10%] sm:right-[15%] md:right-[30%]  p-5 flex-col'>
-                            <div className='flex items-center mb-4'>
-                                <PiFinnTheHuman size={30} />
-                                <li className='hover:text-green-500 pl-2 cursor-pointer text-base whitespace-nowrap text-ellipsis overflow-hidden ' >
-                                {session?.user?.name}
-                                </li>
-                            </div>
-                            <Link href={'/dashboard'} >
-                                <li onClick={() => setProfileOpen(false)} className='hover:text-blue-500 mb-4 cursor-pointer text-base'>
-                                    <div className=' flex items-center'>
-                                        <CiSettings size={25} />
-                                        Settings
+                            {
+                                session ? (
+                                    <div>
+                                        <div className='flex items-center mb-4'>
+                                            <PiFinnTheHuman size={30} />
+                                            <li className='hover:text-green-500 pl-2 cursor-pointer text-base whitespace-nowrap text-ellipsis overflow-hidden ' >
+                                                {session?.user?.name}
+                                            </li>
+                                        </div>
+                                        <Link href={'/dashboard'} >
+                                            <li onClick={() => setProfileOpen(false)} className='hover:text-blue-500 mb-4 cursor-pointer text-base'>
+                                                <div className=' flex items-center'>
+                                                    <CiSettings size={25} />
+                                                    Settings
+                                                </div>
+                                            </li>
+                                        </Link>
+                                        <Link href={'/login'}>
+                                            <li onClick={() => setProfileOpen(false)} className='hover:text-red-500 mb-2 cursor-pointer text-base '>
+                                                <div className='flex items-center' onClick={() => signOut()}>
+                                                    <CiLogout size={25} />
+                                                    LogOut
+                                                </div>
+                                            </li>
+                                        </Link>
+
                                     </div>
-                                </li>
-                            </Link>
-                            <Link href={'/login'}>
-                                <li onClick={() => setProfileOpen(false)} className='hover:text-red-500 mb-2 cursor-pointer text-base '>
-                                    <div className='flex items-center'>
-                                        <CiLogout size={25} />
-                                        LogOut
-                                    </div>
-                                </li>
-                            </Link>
+                                ) :
+                                    <></>
+                            }
+
                         </ul>
                     </div>
                 </div>
             </div>
         </nav>
-        
+
     )
 }
 
