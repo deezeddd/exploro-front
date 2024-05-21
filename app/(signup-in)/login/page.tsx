@@ -15,10 +15,17 @@ export default function Login() {
     let password = formData.get('password') as string;
     console.log(email, password);
 
+    const res = await signIn('credentials',{
+      email: email,
+      password : password,
+      redirect: false
+    })
+    console.log(res)
   }
   // async function git() {
 
   // }
+
   if (!session) {
     return (
       <div className="flex h-screen w-screen items-center justify-center bg-gray-50">
@@ -39,9 +46,9 @@ export default function Login() {
               {' for free.'}
             </p>
           </Form>
-
-          <Button onClick={() => signIn("github")}>Sign in With Github</Button>
-          <Button onClick={() => signIn("google")}>Sign in With Google</Button>
+          <h1 className='text-center'>OR</h1>
+          <Button className='ml-[32%] mb-4 mt-4' onClick={() => signIn("github")}>Sign in With Github</Button>
+          {/* <Button onClick={() => signIn("google")}>Sign in With Google</Button> */}
 
         </div>
       </div>
