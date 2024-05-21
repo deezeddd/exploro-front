@@ -6,6 +6,7 @@
         -[] Modifications in that
         -[] Simple login signup with Auth.js
 
+    [] Rework on credentials NextAuth 
     [] Dashboard - Priority 
     [] Home Page
     [X] 2 Sidebar on Button () -> Create a common component
