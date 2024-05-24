@@ -22,6 +22,7 @@ const handler = NextAuth({
         },
         async authorize(credentials, req) {
           // Add logic here to look up the user from the credentials supplied
+          let flag = null;
           const {email , password } = credentials as {
             email : string,
             password : string
@@ -33,17 +34,21 @@ const handler = NextAuth({
       
             if (user) {
               // Any object returned will be saved in `user` property of the JWT
+              flag = user
+              console.log("Auth-Method => ",flag)
               return user
             } else {
               // If you return null then an error will be displayed advising the user to check their details.
-              return null
+              flag = null
+              return flag
       
               // You can also Reject this callback with an Error thus the user will be sent to the error page with the error message as a query parameter
             }
           }
           else{
-            throw new Error("Invalid Credentials")
-            return null;
+            // return Error("Invalid Credentials")
+            flag = null
+            return flag;
           }
         }
       }),    

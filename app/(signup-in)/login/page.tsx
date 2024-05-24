@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button';
 
 export default function Login() {
   const { data: session } = useSession();
+  var status = null;
   async function login(formData: FormData) {
     let email = formData.get('email') as string;
     let password = formData.get('password') as string;
@@ -21,10 +22,15 @@ export default function Login() {
       redirect: false
     })
     console.log(res)
+    status = res?.status
   }
+  console.log(status)
   // async function git() {
 
   // }
+  if(!status){
+    <h1>{status}</h1>
+  }
 
   if (!session) {
     return (

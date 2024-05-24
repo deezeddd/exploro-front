@@ -26,6 +26,7 @@ export default function Navbar() {
     const handleProfile = () => {
         setProfileOpen(!profileOpen)
     }
+    console.log("Navbar +>",session)
 
     return (
         <nav className='sticky top-0 w-full shadow-xl h-24 bg-white'>
