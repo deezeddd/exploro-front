@@ -24,9 +24,13 @@
     
 2nd Step=>
     [] Database Connections
+
 3rd Step=>
     [] APIs
     [] Any Service?
+
 4th Step=>
     [] Find Shortcuts/packages to easier tasks
     
+5th Step =>
+    [] Set a Deadline for each week.
