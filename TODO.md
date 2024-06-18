@@ -34,3 +34,21 @@
     
 5th Step =>
     [] Set a Deadline for each week.
+
+
+
+
+
+Table - Phase 1
+
+Studies table => content, heading, total applied to study, publisherId
+
+Participant/User => UserId, UserName and details(dob etc), user Email, Notes, ConsentForm if needed, profile photo, Eligible or not, status
+User-Study Id => store multiple studies if possible.
+Pipeline - Applied, Screening, Enrolled, Completed -> Store UserIds and StudyIds.
+
+Add New Participant (Must be form the registerd User) => Name Email photo,phone,resumeLink
+
+Phase - 2
+
+Schedule, Dashboard
