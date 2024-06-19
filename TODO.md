@@ -37,6 +37,7 @@
 
 
 
+[] How to consume APIs from backend to Frontend
 
 
 Table - Phase 1
@@ -52,3 +53,14 @@ Add New Participant (Must be form the registerd User) => Name Email photo,phone,
 Phase - 2
 
 Schedule, Dashboard
+
+
+
+[] Weekend Work
+=> Create Tables, and it's APIs. - 25-35 mins
+=> Learn about PostGres - 40mins
+=> Learn how to consume those APIs - 20 mins
+=> CRUD operations from frontend = 2hrs
+
+=> Don't try to be perfect/ just do it initially then refactor it
+=> Handle auth, dashboard and calendar at the end don't worry about it
