@@ -46,9 +46,13 @@ Studies table => content, heading, total applied to study, publisherId
 
 Participant/User => UserId, UserName and details(dob etc), user Email, Notes, ConsentForm if needed, profile photo, Eligible or not, status
 User-Study Id => store multiple studies if possible.
-Pipeline - Applied, Screening, Enrolled, Completed -> Store UserIds and StudyIds.
+Pipeline - Applied, Screening, Enrolled, Completed -> Store UserIds and StudyIds. ( For each study by user there will be seperate Status )
+so create study in differnt table and its relation with user along with Status of the study of the user
 
-Add New Participant (Must be form the registerd User) => Name Email photo,phone,resumeLink
+
+UserStudy -> add status column, 
+
+Add New Participant (Must be form the registerd User) => Name Email photo,phone,resumeLink => Create this table.
 
 Phase - 2
 
